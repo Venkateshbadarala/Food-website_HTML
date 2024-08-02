@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+      
+    .wrapper{
+       box-sizing: content-box;
+       height: 70px;
+       padding: 50px 30px;
+       display: flex;
+      
+
+       
+   }
+   span{
+       display: block;
+       height: 100%;
+       padding-left: 10px;
+       color: red;
+       animation: spin_words 7s infinite ease;
+       font-size: 40px;
+   }
+   @keyframes spin_words{
+     
+     0%{
+           transform: translateY(0%);
+       }
+       25%{
+           transform: translateY(-100%);
+       }
+       50%{
+           transform: translateY(-200%);
+       }
+      
+       75%{
+           transform: translateY(-300%);
+       }
+      
+       100%{
+           transform: translateY(-400%);
+       }
+       
+      }
+   .words{
+       overflow: hidden;
+   }
+  
+   
+      
+    </style>
+<body>
+ 
+       
+          
+     
+        <div class="wrapper">
+            <p>Let's Order your</p>
+            <div class="words">
+                <span>Biriyani</span>
+                <span>Burger</span>
+                <span>FriedRice</span>
+                <span>Milkshake</span>
+                <span>Pizza</span>
+            </div>
+        </div>
+       
+    
+    
+    
+</body>
+</html>
